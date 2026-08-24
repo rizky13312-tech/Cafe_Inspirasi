@@ -1,0 +1,293 @@
+:root {
+    --coklat: #5a2e0f;
+    --coklat-tua: #2d1607;
+    --cream: #fff7ea;
+    --gold: #f4b942;
+    --orange: #d97706;
+    --shadow: 0 18px 45px rgba(90, 46, 15, 0.18);
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: var(--cream);
+    color: #2d1607;
+}
+
+.navbar {
+    background: rgba(45, 22, 7, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: .5px;
+}
+
+.nav-link {
+    font-weight: 600;
+    margin-left: 12px;
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+.hero {
+    background:
+        linear-gradient(120deg, rgba(0, 0, 0, .78), rgba(90, 46, 15, .65)),
+        url("Cafe Inspirasi.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 82px);
+    font-weight: 900;
+    text-shadow: 0 12px 35px rgba(0, 0, 0, .6);
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ffeac4;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #ffd166, #f4a261);
+    border: none;
+    color: #3b210f;
+    border-radius: 50px;
+    font-weight: 800;
+    padding: 14px 34px;
+    box-shadow: 0 14px 30px rgba(244, 185, 66, .35);
+    transition: .3s;
+}
+
+.btn-warning:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 38px rgba(244, 185, 66, .5);
+}
+
+#tentang {
+    background: white;
+}
+
+#tentang img {
+    border-radius: 28px !important;
+    box-shadow: var(--shadow);
+}
+
+#tentang h2,
+.section-title {
+    font-weight: 900;
+    color: var(--coklat);
+}
+
+#tentang p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #6b4b35;
+}
+
+#menu {
+    background:
+        radial-gradient(circle at top left, #fff1d2, transparent 35%),
+        linear-gradient(180deg, #fffaf3, #f6dfbd) !important;
+}
+
+#menu h3 {
+    font-weight: 850;
+    color: var(--coklat);
+    border-left: 6px solid var(--gold);
+    padding-left: 16px;
+}
+
+.section-title {
+    font-size: 42px;
+    margin-bottom: 45px;
+}
+
+.card {
+    border: none;
+    border-radius: 26px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .92);
+    box-shadow: 0 12px 30px rgba(90, 46, 15, .13) !important;
+    transition: .35s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.015);
+    box-shadow: 0 24px 55px rgba(90, 46, 15, .23) !important;
+}
+
+.card-body {
+    padding: 30px 22px;
+}
+
+.card-body h5 {
+    font-weight: 850;
+    color: var(--coklat-tua);
+    min-height: 48px;
+}
+
+.card-body p {
+    font-size: 21px;
+    font-weight: 900;
+    color: var(--orange);
+    margin: 14px 0 22px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #7a3e16, #4b230b);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 28px;
+    font-weight: 700;
+    box-shadow: 0 10px 22px rgba(122, 62, 22, .25);
+    transition: .3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #4b230b, #2b1204);
+    box-shadow: 0 16px 30px rgba(122, 62, 22, .38);
+}
+
+.order-card {
+    border-radius: 30px;
+    background: white;
+    box-shadow: var(--shadow);
+    padding: 28px;
+}
+
+#keranjang li {
+    border: none;
+    border-radius: 18px;
+    margin-bottom: 12px;
+    background: white;
+    box-shadow: 0 8px 22px rgba(90, 46, 15, .10);
+    padding: 16px 20px;
+    font-weight: 600;
+}
+
+.btn-danger {
+    border-radius: 50px;
+    padding: 6px 16px;
+    font-weight: 700;
+}
+
+.total-box {
+    background: linear-gradient(135deg, #fff4d6, #ffe2aa);
+    border-radius: 20px;
+    padding: 18px;
+    font-weight: 900;
+    color: var(--coklat-tua);
+}
+
+.form-control {
+    border-radius: 16px;
+    border: 1px solid #ead0ad;
+    padding: 13px 16px;
+}
+
+.form-control:focus {
+    border-color: #7a3e16;
+    box-shadow: 0 0 0 .25rem rgba(122, 62, 22, .15);
+}
+
+.form-check {
+    background: #fff8ed;
+    border: 1px solid #f1d6ae;
+    border-radius: 16px;
+    padding: 13px 16px 13px 42px;
+    margin-bottom: 10px;
+}
+
+.form-check-label {
+    font-weight: 650;
+    color: var(--coklat-tua);
+}
+
+.form-check-input:checked {
+    background-color: #7a3e16;
+    border-color: #7a3e16;
+}
+
+#cashBox,
+#qrisBox,
+#transferBox {
+    border: none;
+    border-radius: 22px;
+    background: #fff7e8;
+    box-shadow: inset 0 0 0 1px #f0d4a8;
+    margin-top: 18px;
+}
+
+#cashBox {
+    color: #4d2c12;
+    font-weight: 700;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #2f7d32, #1b5e20);
+    border: none;
+    border-radius: 50px;
+    padding: 14px 24px;
+    font-weight: 850;
+    box-shadow: 0 12px 26px rgba(47, 125, 50, .25);
+    transition: .3s;
+}
+
+.btn-success:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 35px rgba(47, 125, 50, .35);
+}
+
+#reservasi {
+    background: linear-gradient(135deg, #fff7ea, #f6dfbd) !important;
+}
+
+#reservasi form {
+    border: none;
+    border-radius: 30px !important;
+    box-shadow: var(--shadow) !important;
+}
+
+#kontak {
+    background: linear-gradient(135deg, #3a1d0b, #1f1007) !important;
+}
+
+footer {
+    background: #150a04;
+    color: #f9e8cf;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 90vh;
+        padding: 80px 20px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+}
+.menu-img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:18px;
+    margin-bottom:15px;
+}
